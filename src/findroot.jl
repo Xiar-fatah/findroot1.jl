@@ -1,5 +1,11 @@
 module findroot
 
-# Write your package code here.
+using Distances
+using Printf, LinearAlgebra
+
+export fsolve
+
+include("interface.jl")
+include("minpack.jl")
 
 end
