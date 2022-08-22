@@ -547,7 +547,11 @@ if PRINT_FILE
 end
 
 
+
+df, initial, name = rosenbrock()
+tot_time = @elapsed r = fsolve(df.f!, df.g!, initial, method=:hybr, tracing=true)
 for (df, initial, name) in alltests
+
     for method in (:hybr, :lm)
         if name == "Trigonometric" && method == :hybr
             continue

@@ -59,7 +59,7 @@ function Base.push!(trace::AlgoTrace, x::Vector{Float64}, fvec::Vector{Float64},
             end
         elseif iflag == 1  # computing function
             trace.f_calls += 1
-            x_step = (trace.x_old, x)
+            x_step = sqeuclidean(trace.x_old, x)
             f_norm = maximum(abs, fvec)
             now = time()
             elapsed = now - trace.last_feval_time
