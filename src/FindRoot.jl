@@ -1,4 +1,4 @@
-module findroot
+module FindRoot
 
 using Distances
 using Printf, LinearAlgebra
