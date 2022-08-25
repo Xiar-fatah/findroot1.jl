@@ -1,4 +1,4 @@
-using findroot
+using FindRoot
 using Test, Printf, LinearAlgebra
 
 #=
