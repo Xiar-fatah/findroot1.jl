@@ -1,13 +1,13 @@
-using findroot
+using FindRoot
 using Documenter
 
-DocMeta.setdocmeta!(findroot, :DocTestSetup, :(using findroot); recursive=true)
+DocMeta.setdocmeta!(FindRoot, :DocTestSetup, :(using FindRoot); recursive=true)
 
 makedocs(;
-    modules=[findroot],
+    modules=[FindRoot],
     authors="Kiar Fatah",
     repo="https://github.com/Xiar-fatah/findroot.jl/blob/{commit}{path}#{line}",
-    sitename="findroot.jl",
+    sitename="FindRoot.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
         canonical="https://Xiar-fatah.github.io/findroot.jl",
